@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(50, 50, 100);
+}
+
+header {
+  display: flex;
+  padding: 3.125rem 3.75rem 0rem 3.75rem;
+}
+
+.logotypes_hlegal {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  gap: 0.38rem;
+}
+
+.header_menu ul {
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.header_menu li {
+  flex-shrink: 0;
+}
+
+.languages_list li {
+  padding: 0.31rem 0.44rem;
+}
+
+.header_nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header_nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.94rem;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

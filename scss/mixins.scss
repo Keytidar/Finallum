@@ -1,0 +1,93 @@
+//Hero
+
+@mixin hero_regular() {
+  font-family: $font-family-primary;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin hero_mobile() {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: $gradient_red_text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin h2_mobile() {
+  font-family: $font-family-primary;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+
+@mixin margin_mobile_horizontal {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@mixin margin_mobile_vertical {
+  margin-top: $tablet-margin_2;
+  margin-bottom: $tablet-margin_2;
+}
+
+@mixin h3_caps {
+  font-family: $font-family-primary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+
+@mixin center-flex{
+  display: flex;
+  align-items: center;
+}
+
+@mixin center_x {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin h3_regular {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $light_blue_regular;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  // margin-right: 30px;
+  // margin-left: 30px;
+}
+
+@mixin p_regular {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  color: $basic_white;
+}
+
+@mixin h4_regular {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin margin_tablet_horizontal {
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+}
+
+$tablet-margin: 3.75rem;
+
+$tablet-margin_2: 1.88rem;
