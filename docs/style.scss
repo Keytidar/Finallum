@@ -353,6 +353,20 @@ header {
 }
 
 
+///Footer CSS
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.88rem;
+}
+
+.footer_block {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
 
 
 
@@ -363,7 +377,6 @@ header {
   font-weight: 700;
   line-height: normal;
 }
-
 
 
 
@@ -477,6 +490,32 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  footer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_block {
+    margin-right: 0;
+  }
+
+  .footer_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
   }
 }
 
