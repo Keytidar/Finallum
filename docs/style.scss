@@ -326,7 +326,7 @@ header {
 .publication {
   display: flex;
   flex-direction: column;
-  width: 32.08rem;
+  flex: 1 1 19rem;
 }
 
 .publications_container {
@@ -334,9 +334,7 @@ header {
   flex-wrap: wrap;
   gap: 1.88rem;
   justify-content: center;
-  flex-shrink: 1;
-  flex-grow: 1;
-  flex-basis: 32rem;
+  flex: 0 1 auto;
 }
 
 .publication_text {
@@ -354,9 +352,7 @@ header {
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
-.publication_image_container img {
-  overflow: hidden;
-}
+
 
 
 
