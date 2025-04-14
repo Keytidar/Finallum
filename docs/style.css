@@ -191,6 +191,7 @@ header {
   margin-left: 10rem;
   margin-right: 10rem;
   justify-content: center;
+  background-color: rgb(245, 245, 250);
 }
 
 .quote_text {
@@ -210,6 +211,7 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.75rem 0rem 0rem 0.75rem;
 }
 
 .hero_regular {
@@ -290,6 +292,17 @@ header {
   .services_container {
     gap: 1.88rem;
   }
+  .quote_container {
+    flex-direction: column;
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+  }
+  .quote_image {
+    max-width: 100%;
+  }
+  .quote_image img {
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
@@ -338,6 +351,15 @@ header {
   }
   .services_card {
     max-width: 18rem;
+  }
+  .quote_container {
+    flex-direction: column;
+  }
+  .quote_image {
+    max-width: 100%;
+  }
+  .quote_image img {
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
