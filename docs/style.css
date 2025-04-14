@@ -16,10 +16,35 @@ header {
   padding: 3.125rem 3.75rem 0rem 3.75rem;
 }
 
+.hlegal_logo_mobile {
+  display: none;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.slash {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hlegallaw_container {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
 .logotypes_hlegal {
   display: flex;
   flex-direction: column;
   margin-right: auto;
+  gap: 0.41rem;
 }
 
 .header_menu {
@@ -53,7 +78,252 @@ header {
   gap: 0.94rem;
 }
 
-.header_wrapper {
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_solutions {
+  padding-top: 22.56rem;
+  padding-bottom: 25.31rem;
+  padding-left: 35rem;
+  padding-right: 35rem;
+}
+
+.header_solutions h1 {
+  color: var(--Basic-White, #FFF);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.scroll_button {
+  padding-bottom: 1.87rem;
+}
+
+.scroll_block {
+  display: flex;
+  gap: 1.88rem;
+  padding-right: 3.75rem;
+  border-right: 4px solid red;
+  white-space: nowrap;
+}
+
+.scroll_ul {
   display: flex;
   flex-direction: column;
+  gap: 1.88rem;
+  align-items: flex-end;
+}
+
+.scroll_menu {
+  display: flex;
+  gap: 3.75rem;
+  flex: 1;
+  margin-left: 17.5rem;
+  margin-right: 17.5rem;
+}
+
+.scroll_menu_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  justify-content: center;
+}
+
+.margin_wrapper {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.services_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.75rem;
+}
+
+.services_card {
+  display: flex;
+  flex-direction: column;
+  max-width: 30.83rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.services_card svg {
+  margin-bottom: 1.88rem;
+  padding: 0.875rem;
+  border-radius: 1.5rem;
+  background: var(--Basic-White, #FFF);
+  box-sizing: content-box;
+}
+
+.services_card p {
+  margin-top: 0.94rem;
+}
+
+.hero_regular {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .header_menu > *:not(.languages_list):not(.phone_number) {
+    display: none;
+  }
+  .languages_list {
+    margin-right: auto;
+  }
+  .header_nav {
+    display: none;
+  }
+  .header_wrapper {
+    background: rgba(245, 245, 250, 0.2);
+    padding: 0.625rem 0.9375rem;
+  }
+  .logotypes_hlegal {
+    padding: 0.9375rem 0rem 0.625rem 0rem;
+    margin-right: 0;
+    gap: 0.22rem;
+  }
+  .logotypes_hlegal svg {
+    max-width: 4.3rem;
+    height: auto;
+  }
+  .hlegallaw_container {
+    padding: 0rem 0.9375rem;
+    margin-right: 0;
+  }
+  .hlegal_logo_mobile {
+    display: flex;
+    margin-right: auto;
+  }
+  .burger_menu {
+    display: flex;
+  }
+  .header_solutions {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+  .scroll_menu {
+    flex-direction: column;
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+    display: contents;
+  }
+  .scroll_menu_text {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+  }
+  .scroll_ul {
+    flex-direction: row;
+  }
+  .scroll_block {
+    overflow-x: auto;
+    border-right: none;
+    padding-bottom: 3.75rem;
+    border-bottom: 4px solid red;
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+  }
+  .margin_wrapper {
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+  }
+  .services_container {
+    gap: 1.88rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 1.88rem;
+  }
+  .header_menu {
+    order: -1;
+  }
+  .header_nav {
+    flex-direction: row;
+  }
+  .header_wrapper {
+    display: contents;
+  }
+  .header_solutions {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 17rem;
+    padding-bottom: 26rem;
+  }
+  .scroll_menu {
+    flex-direction: column;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    display: contents;
+  }
+  .scroll_menu_text {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .scroll_ul {
+    flex-direction: row;
+  }
+  .scroll_block {
+    overflow-x: auto;
+    border-right: none;
+    padding-bottom: 3.75rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    border-bottom: 4px solid red;
+  }
+  .margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .services_card {
+    max-width: 18rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .header_solutions {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 15.31rem;
+    padding-bottom: 18rem;
+  }
+  .scroll_menu {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .services_card {
+    max-width: 16.33rem;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .scroll_menu {
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+  }
+  .margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .services_card {
+    max-width: 25rem;
+  }
 }/*# sourceMappingURL=style.css.map */
