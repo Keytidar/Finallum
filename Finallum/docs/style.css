@@ -25,6 +25,11 @@ header {
 
 .hlegal_logo_mobile {
   display: none;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .burger_menu {
