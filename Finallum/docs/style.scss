@@ -23,6 +23,14 @@ body {
 header {
   display: flex;
   padding: 3.125rem 3.75rem 0rem 3.75rem;
+  
+
+  text-align: right;  
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
 }
 
 .hlegal_logo_mobile {
@@ -61,6 +69,13 @@ header {
   align-items: center;
   gap: 0.38rem;
 }
+
+.header_active {
+  color: $accent_red;
+  text-decoration: underline 2px solid $accent_red;
+  text-underline-offset: 0.19rem;
+}
+
   /// Контейнер списков
 .header_menu ul {  
   display: flex;
@@ -75,6 +90,11 @@ header {
   /// Элементы списков
 .languages_list li {
   padding: 0.31rem 0.44rem;
+}
+
+.language_active {
+  background-color: $accent_red;
+  border-radius: 0.5rem;
 }
 
 .header_nav {
@@ -121,11 +141,12 @@ header {
   padding-bottom: 1.87rem;
 }
 
+
 .scroll_block {
   display: flex;
   gap: 1.88rem;
   padding-right: 3.75rem;
-  border-right: 4px solid red;
+  border-right: 4px solid $grey_separator;
   white-space: nowrap;
   color: $grey_text;
 }
@@ -189,6 +210,13 @@ header {
   gap: 3.75rem;
 }
 
+.services_heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  margin-top: 3.75rem;
+}
+
 .services_container p {
   color: white;
 }
@@ -229,6 +257,16 @@ header {
 
 .quote_text {
   padding: 1.88rem;
+  flex: 1;
+}
+
+.quote_text h4 {
+  margin-top: 1.88rem;
+  color: $grey_text;
+}
+
+.quote_text p {
+  color: $grey_text;
 }
 
 .quote_image {
@@ -236,6 +274,7 @@ header {
   max-width: 25rem;
   height: auto;
   object-fit: contain;
+  flex: 1;
 }
 
 .quote_image img {
@@ -256,6 +295,7 @@ header {
 .trust {
   margin-top: 3.75rem;
   margin-bottom: 1.88rem;
+  color: $blue_regular;
 }
 
 .sponsor_container {
@@ -445,11 +485,6 @@ header {
 }
 ///Sponsor backgrounds end
 
-///Sponsor logotypes
-
-
-
-///Sponsor Logotypes end
 
 ///Publications CSS
 
@@ -457,6 +492,16 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1 1 19rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.publications_heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.88rem;
+  padding-bottom: 1.88rem;
+  gap: 0.62rem;
 }
 
 .publications_container {
@@ -501,11 +546,60 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: auto;
+  gap: 1.31rem;
+  width: 100%;
 }
 
+.dot_separator_footer {
+  margin-left: 0.62rem;
+  margin-right: 0.62rem;
+}
+
+.footer_top {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.copyright {
+  margin-left: auto;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.footer_phone {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $blue_regular;
+}
+
+.email {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+
+///Heroes 
 
 
-///Heroes etc
+a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  color: $light_blue_active;
+}
 
 .hero_regular {
   font-style: normal;
@@ -534,6 +628,16 @@ h3 {
   line-height: normal;
 }
 
+.h3_caps {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: $light_blue_regular;
+}
+
 h4 {
   font-size: 16px;
   font-style: normal;
@@ -541,11 +645,39 @@ h4 {
   line-height: normal;
 }
 
+.weight_400 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
 .p_small {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.grey_text {
+  color: $grey_text;
+}
+
+.margin-top_188rem{
+  margin-top: 1.88rem;
+}
+
+.center_flex {
+  display: flex;
+  align-items: center;
 }
 
 .gdpr_publication_picture {
@@ -573,7 +705,18 @@ h4 {
 }
 
 .white {
-  color: white; 
+  color: white;
+}
+
+.introduction {
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 157.895% */
+}
+
+.grey_bg {
+  background-color: $grey_bg;
 }
 
 .gradient_text {
@@ -666,6 +809,7 @@ h4 {
   .scroll_menu_text {
     padding-left: 1.88rem;
     padding-right: 1.88rem;
+    padding-top: 1.88rem;
   }
 
   .scroll_ul {
@@ -676,7 +820,7 @@ h4 {
     overflow-x: auto;
     border-right: none;
     padding-bottom: 3.75rem;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid $grey_separator;
     padding-left: 1.88rem;
     padding-right: 1.88rem;
   }
@@ -700,6 +844,7 @@ h4 {
     max-width: 100%;
   }
 
+
   .quote_image img {
     border-radius: 0.75rem 0.75rem 0rem 0rem;
   }
@@ -710,20 +855,29 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  
 
   footer {
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 1.88rem;
+  }
+
+  footer circle {
+    display: none ;
   }
 
   .footer_block {
     margin-right: 0;
+    align-items: center;
   }
+
 
   .footer_top {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: contents;
   }
 
   .footer_bottom {
@@ -732,9 +886,29 @@ h4 {
     align-items: center;
   }
 
+  .services_heading {
+    margin-top: 1.88rem;
+  }
+
+  .services_card {
+    margin-top: 1.88rem;
+    margin-bottom: 1.88rem;
+  }
+
+  .sponsor_container :nth-child(n+7) {
+    display: none;
+  }
+
+
   .copyright {
     display: flex;
     justify-content: center;
+    order: 1;
+    margin-left: 0;
+  }
+
+  .dot_separator_footer {
+    display: none;
   }
 }
 
@@ -776,6 +950,7 @@ h4 {
   .scroll_menu_text {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+    padding-top: 3.75rem;
   }
 
   .scroll_ul {
@@ -788,7 +963,7 @@ h4 {
     padding-bottom: 3.75rem;
     padding-left:  3.75rem;
     padding-right: 3.75rem;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid $grey_separator;
   }
 
   .margin_wrapper {
@@ -802,6 +977,8 @@ h4 {
 
   .quote_container {
     flex-direction: column;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
   }
 
   .quote_image {
@@ -810,6 +987,10 @@ h4 {
 
   .quote_image img {
     border-radius: 0.75rem 0.75rem 0rem 0rem;
+  }
+
+  .sponsor_block {
+    max-width: 16rem;
   }
 }
 
