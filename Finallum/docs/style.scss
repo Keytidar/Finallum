@@ -43,6 +43,21 @@ header {
   line-height: normal;
 }
 
+.hlegal_logo_tablet {
+  display: none;
+
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $blue_regular;
+}
+
+.tablet_slash_logo {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .burger_menu {
   display: none;
 }
@@ -101,6 +116,7 @@ header {
 .language_active {
   background-color: $accent_red;
   border-radius: 0.5rem;
+  color: white;
 }
 
 .header_nav {
@@ -114,6 +130,10 @@ header {
   gap: 0.94rem;
 }
 
+.header_nav_active {
+  color: $accent_red;
+  border-bottom: 2px solid $accent_red;
+}
 
 
 
@@ -1013,8 +1033,12 @@ p {
     max-width: 16rem;
   }
 
-  .hlegal_logo_mobile {
+  .hlegal_logo_tablet {
     display: flex;
+  }
+
+  .hlegallaw_container {
+    align-items: flex-start;
   }
 }
 
@@ -1041,6 +1065,7 @@ p {
   .services_card {
     max-width: 16.33rem;
   }
+
 }
 
 // Desktop SD/laptop (1441px - 1920px)
