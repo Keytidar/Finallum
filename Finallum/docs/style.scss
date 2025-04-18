@@ -677,6 +677,10 @@ p {
   color: $grey_text;
 }
 
+.light_blue_text {
+  color: $light_blue_regular;
+}
+
 .margin-top_188rem{
   margin-top: 1.88rem;
 }
@@ -693,6 +697,16 @@ p {
 
 .millenials_publication_picture {
   background-image: url(../images/publications/publication_millenials.png);
+  background-position: center;
+}
+
+.law_publication_picture {
+  background-image: url(../images/publications/publication_law.jpg);
+  background-position: center;
+}
+
+.children_publication_picture {
+  background-image: url(../images/publications/Publication-children.jpg);
   background-position: center;
 }
 
@@ -997,6 +1011,10 @@ p {
 
   .sponsor_block {
     max-width: 16rem;
+  }
+
+  .hlegal_logo_mobile {
+    display: flex;
   }
 }
 
