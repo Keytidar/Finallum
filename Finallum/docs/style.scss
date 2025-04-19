@@ -829,6 +829,59 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+///About us page
+
+.about_heading_block {
+  display: flex;
+}
+
+.about_heading_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-right: 1.88rem;
+  flex: 1;
+}
+
+.about_heading_sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.88rem;
+  border-left: 2px solid $grey_separator_nontransparent;
+  max-width: 24rem;
+  flex: 1;
+  gap: 2.5rem;
+}
+
+.heading_sidebar_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading_sidebar_element p {
+  color: $blue_regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.sidebar_element_count {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 0.5rem;
+}
+
+.about_margin_wrapper {
+  margin-left: 17.5rem;
+  margin-right: 17.5rem;
+}
 
 ///Media queries
 
@@ -1142,6 +1195,10 @@ p {
     max-width: 25rem;
   }
 
+  .about_margin_wrapper {
+    margin-right: 11.25rem;
+    margin-left: 11.25rem;
+  }
 
 
 
