@@ -878,10 +878,98 @@ p {
   gap: 0.5rem;
 }
 
+.team_text {
+  color: white;
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.80);
+  font-family: Montserrat;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.9375rem;
+  text-transform: uppercase;
+}
+
 .about_margin_wrapper {
   margin-left: 17.5rem;
   margin-right: 17.5rem;
 }
+
+.team_image_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 7.13rem;
+  max-height: auto;
+
+  aspect-ratio: 1920 / 584;
+
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+
+  background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(../images/about_us_team_photo.png) lightgray 50% / cover no-repeat;
+  background-blend-mode: screen, normal;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_flex_container {
+  display: flex;
+}
+
+.about_flex_container h1 {
+  margin-left: 3.75rem;
+}
+
+.about_p_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.achievements_block {
+  display: flex;
+  gap: 2.5rem;
+  overflow: hidden;
+  flex: 1;
+}
+
+.achievement {
+  display: flex;
+  justify-content: center;
+  max-width: 23.12rem;
+  min-width: 15.94rem;
+  height: auto;
+  margin-top: 1.88rem;
+  margin-bottom: 1.88rem;
+}
+
+.achievement_image_legal500 {
+  width: 80px;
+  height: 60px;
+  background: url(../images/achievements/legal_500.png);
+}
+
+.achievement_image_legalawards {
+  width: 159px;
+  height: 60px;
+  background: url(../images/achievements/jur_prem.png);
+}
+
+.achievement_image_leader {
+  width: 195px;
+  height: 60px;
+  background: url(../images/achievements/leader.png);
+}
+
+.achievement_image_ulf {
+  width: 166px;
+  height: 60px;
+  background: url(../images/achievements/ulf.png);
+}
+
 
 ///Media queries
 
@@ -1059,6 +1147,29 @@ p {
   .dot_separator_footer {
     display: none;
   }
+
+  .about_heading_block {
+    flex-direction: column;
+    gap: 1.88rem;
+  }
+
+  .about_margin_wrapper {
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+  }
+
+  .team_text {
+    color: var(--Basic-White, #FFF);
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.80);
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8125rem;
+  text-transform: uppercase;
+  }
 }
 
 
@@ -1149,6 +1260,30 @@ p {
   .hlegallaw_container {
     align-items: flex-start;
   }
+
+  .about_margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+
+  .about_heading_block {
+    flex-direction: column;
+    gap: 1.88rem;
+  }
+
+  .team_text {
+    color: var(--Basic-White, #FFF);
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.80);
+  font-family: Montserrat;
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.9375rem;
+  text-transform: uppercase;
+  }
+
 }
 
 //tablet HD/laptop (1025px - 1440px)
@@ -1173,6 +1308,11 @@ p {
 
   .services_card {
     max-width: 16.33rem;
+  }
+
+  .about_margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
   }
 
 }
