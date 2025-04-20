@@ -567,7 +567,7 @@ header {
 footer {
   display: flex;
   flex-direction: row;
-  margin-top: 1.88rem;
+  padding-top: 1.88rem;
 }
 
 .footer_block {
@@ -703,6 +703,10 @@ p {
 
 .light_blue_text {
   color: rgb(36, 163, 255);
+}
+
+.color_blue {
+  color: rgb(50, 50, 100);
 }
 
 .margin-top_188rem {
@@ -841,6 +845,11 @@ p {
   margin-right: 17.5rem;
 }
 
+.about_padding_wrapper {
+  padding-left: 17.5rem;
+  padding-right: 17.5rem;
+}
+
 .team_image_container {
   display: flex;
   justify-content: center;
@@ -849,7 +858,6 @@ p {
   max-height: auto;
   aspect-ratio: 1920/584;
   margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
   background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(../images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
   background-blend-mode: screen, normal;
   position: relative;
@@ -858,11 +866,13 @@ p {
 
 .about_flex_container {
   display: flex;
+  padding-top: 3.75rem;
 }
 
 .about_flex_container h1 {
   margin-left: 3.75rem;
-  min-width: 22.62rem;
+  min-width: 19.69rem;
+  margin-bottom: 3.75rem;
 }
 
 .about_p_container {
@@ -872,12 +882,30 @@ p {
   max-width: 58.62rem;
 }
 
+.achievements_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 250);
+}
+
+.achievements_container h3 {
+  margin-top: 1.88rem;
+}
+
 .achievements_block {
   display: flex;
   gap: 2.5rem;
   overflow: hidden;
   flex: 1;
   justify-content: space-between;
+}
+
+.dot_menu_about_page {
+  gap: 0.94rem;
+}
+
+.dot_menu_about_page svg:nth-child(n+4) {
+  display: none;
 }
 
 .achievement {
@@ -893,7 +921,7 @@ p {
   padding-right: auto;
   padding-top: 1.56rem;
   padding-bottom: 1.56rem;
-  background-color: red;
+  background-color: white;
 }
 
 .achievement_image_legal500 {
@@ -1089,6 +1117,23 @@ p {
   .achievements_block :nth-child(n+2) {
     display: none;
   }
+  .about_padding_wrapper {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+  }
+  .about_flex_container {
+    flex-direction: column;
+  }
+  .about_flex_container h1 {
+    margin-left: 0;
+    margin-top: 1.88rem;
+  }
+  .dot_menu_about_page svg:nth-child(n+4) {
+    display: inline;
+  }
+  .grey_bg_mobile {
+    background: var(--Grey-Bg, #F5F5FA);
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
@@ -1179,6 +1224,17 @@ p {
     letter-spacing: 3.9375rem;
     text-transform: uppercase;
   }
+  .about_padding_wrapper {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .about_flex_container {
+    flex-direction: column;
+  }
+  .about_flex_container h1 {
+    margin-left: 0;
+    margin-top: 1.88rem;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .header_solutions {
@@ -1201,6 +1257,10 @@ p {
   .about_margin_wrapper {
     margin-left: 3.75rem;
     margin-right: 3.75rem;
+  }
+  .about_padding_wrapper {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
   }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
