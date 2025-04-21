@@ -390,8 +390,13 @@ body:has(#burger-toggle:checked) .header_nav {
   cursor: pointer;
 }
 
-.dot_menu_about_page svg.active circle {
-  fill: $light_blue_regular;
+.dot_menu_about_page label:nth-of-type(n + 4) {
+  display: none;
+}
+
+
+.dot_menu_about_page input:checked + label circle {
+  fill: #24a3ff;
   opacity: 1;
 }
 ///Sponsor blocks
@@ -1049,9 +1054,7 @@ p {
   gap: 0.94rem;
 }
 
-.dot_menu_about_page svg:nth-child(n + 4) {
-  display: none;
-}
+
 
 .achievement {
   display: flex;
@@ -1439,6 +1442,10 @@ p {
 
   .h_logo {
     background-size: cover;
+  }
+
+  .dot_menu_about_page label:nth-of-type(n + 4) {
+    display: flex;
   }
 }
 
