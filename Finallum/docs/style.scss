@@ -74,6 +74,7 @@ header {
 .header_wrapper {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .hlegallaw_container {
@@ -134,6 +135,10 @@ header {
   gap: 0.94rem;
 }
 
+.header_nav li {
+  cursor: pointer;
+}
+
 .header_nav_active {
   color: $accent_red;
   border-bottom: 2px solid $accent_red;
@@ -148,7 +153,7 @@ header {
 .h_logo {
   background: url(../images/h_logo.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
   flex-shrink: 0;
   width: auto;
@@ -183,6 +188,20 @@ header {
   padding-bottom: 1.87rem;
 }
 
+.scroll_button svg:hover {
+  cursor: pointer;
+}
+
+.scroll_button svg path,
+.scroll_button svg circle {
+  stroke: white;
+  transition: stroke 0.3s ease 0.1s;
+}
+
+.scroll_button svg:hover path,
+.scroll_button svg:hover circle {
+  stroke: $accent_red;
+}
 
 .scroll_block {
   display: flex;
@@ -205,7 +224,7 @@ header {
   gap: 3.75rem;
   flex: 1;
 
-
+  margin-top: 3.75rem;
   margin-left: 17.5rem;
   margin-right: 17.5rem;
 }
@@ -332,7 +351,14 @@ header {
   margin-top: 1.88rem;
 }
 
+.dot_menu svg:hover {
+  cursor: pointer;
+}
 
+.dot_menu svg.active circle {
+  fill: $light_blue_regular;
+  opacity: 1; 
+}
 ///Sponsor blocks
 
 .trust {
@@ -1352,11 +1378,12 @@ p {
   .display_except_mobile {
     display: none;
   }
-}
 
   .h_logo {
-    background-size: contain;
+    background-size: cover;
   }
+}
+
 
 
 //Tablet SD
@@ -1522,6 +1549,11 @@ p {
   .about_padding_wrapper {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+  }
+
+  
+  .h_logo {
+    background-size: contain;
   }
 
 
