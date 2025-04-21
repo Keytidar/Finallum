@@ -66,9 +66,7 @@ header {
   display: none;
 }
 
-// #burger-toggle:checked ~ header_nav {
-//   display: flex;
-// }
+
 
 body:has(#burger-toggle:checked) .header_nav {
   display: flex;
@@ -346,11 +344,19 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .quote_image {
-  flex-shrink: 0;
   max-width: 25rem;
   height: auto;
-  object-fit: contain;
-  flex: 1;
+  flex: 0 0 25rem;
+
+  border-radius: 0.75rem 0rem 0rem 0.75rem;
+  background-image: url(./images/team/alexander.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.break_word {
+  word-wrap: break-word;
 }
 
 .quote_image img {
@@ -1186,7 +1192,7 @@ p {
     flex-direction: column;
     position: absolute;
     right: 1rem;
-    top: 7rem;
+    top: 8rem;
     background-color: rgba(23, 23, 37, 0.9);
     padding: 0.8rem;
     align-items: center;
