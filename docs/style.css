@@ -210,6 +210,10 @@ body:has(#burger-toggle:checked) .header_nav {
   align-items: flex-end;
 }
 
+.scroll_ul li:hover {
+  color: rgb(240, 20, 90);
+}
+
 .scroll_menu {
   display: flex;
   gap: 3.75rem;
@@ -735,6 +739,16 @@ h3 {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: rgb(36, 163, 255);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.h3_caps:hover {
+  color: rgb(240, 20, 90);
+}
+
+.h3_caps:hover svg path {
+  stroke: rgb(240, 20, 90);
 }
 
 h4 {

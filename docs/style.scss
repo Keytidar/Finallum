@@ -231,6 +231,10 @@ body:has(#burger-toggle:checked) .header_nav {
   align-items: flex-end
 }
 
+.scroll_ul li:hover {
+  color: $accent_red;
+}
+
 .scroll_menu {
   display: flex;
   gap: 3.75rem;
@@ -791,6 +795,15 @@ h3 {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: $light_blue_regular;
+  width: fit-content;
+}
+
+.h3_caps:hover {
+  color: $accent_red;
+}
+
+.h3_caps:hover svg path {
+  stroke: $accent_red;
 }
 
 h4 {
@@ -1267,6 +1280,7 @@ p {
   .scroll_ul {
     flex-direction: row;
   }
+
 
   .scroll_block {
     overflow-x: auto;
