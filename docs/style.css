@@ -343,6 +343,15 @@ body:has(#burger-toggle:checked) .header_nav {
   margin-top: 1.88rem;
 }
 
+.dot_menu circle {
+  fill: #24A3FF;
+}
+
+.dot_menu input:checked + label circle {
+  fill: #24A3FF;
+  opacity: 1;
+}
+
 .dot_menu svg:hover {
   cursor: pointer;
 }
