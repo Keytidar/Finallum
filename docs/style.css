@@ -54,6 +54,16 @@ header {
   display: none;
 }
 
+body:has(#burger-toggle:checked) .header_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_nav {
+  position: absolute;
+  margin-left: auto;
+}
+
 .slash {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1097,6 +1107,16 @@ p {
   }
   .header_nav {
     display: none;
+  }
+  .header_nav ul {
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 7rem;
+    background-color: rgba(23, 23, 37, 0.9);
+    padding: 0.8rem;
+    align-items: center;
+    border: 2px solid rgba(192, 192, 192, 0.8);
   }
   .header_wrapper {
     background: rgba(245, 245, 250, 0.2);
