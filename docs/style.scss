@@ -568,8 +568,8 @@ header {
 }
 
 .publication_pub_page_settings {
-  flex: 1 1 30%;
-  min-width: 19rem;
+  flex: 1 1 19rem;
+  min-width: 30%;
   max-width: 32rem;
 }
 
@@ -716,12 +716,7 @@ footer {
 
 a {
   text-decoration: none;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.0625rem;
-  color: $light_blue_active;
+  color: inherit;
 }
 
 .hero_regular {

@@ -12,7 +12,6 @@
   background: var(--Gradient-Supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
 }
 
-
 header {
   display: flex;
   padding: 3.125rem 3.75rem 0rem 3.75rem;
@@ -530,8 +529,8 @@ header {
 }
 
 .publication_pub_page_settings {
-  flex: 1 1 30%;
-  min-width: 19rem;
+  flex: 1 1 19rem;
+  min-width: 30%;
   max-width: 32rem;
 }
 
@@ -667,12 +666,7 @@ footer {
 
 a {
   text-decoration: none;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.0625rem;
-  color: rgb(0, 108, 207);
+  color: inherit;
 }
 
 .hero_regular {
