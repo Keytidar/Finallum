@@ -126,6 +126,17 @@ header {
   border-bottom: 2px solid rgb(240, 20, 90);
 }
 
+.h_logo {
+  background: url(../images/h_logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
 .flexbox-center {
   display: flex;
   justify-content: center;
@@ -230,6 +241,7 @@ header {
   max-width: 30.83rem;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+  min-width: 30%;
 }
 
 .services_card svg {
@@ -316,6 +328,7 @@ header {
   background-color: #1C4280;
   justify-content: center;
   align-items: center;
+  min-width: 30%;
 }
 
 .sponsor_hillel {
@@ -1224,6 +1237,10 @@ p {
     display: none;
   }
 }
+.h_logo {
+  background-size: contain;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -1323,6 +1340,9 @@ p {
   .about_flex_container h1 {
     margin-left: 0;
     margin-top: 1.88rem;
+  }
+  .h_logo {
+    background-size: cover;
   }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {

@@ -144,6 +144,18 @@ header {
 
 /// Body CSS
 
+
+.h_logo {
+  background: url(../images/h_logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
 .flexbox-center {
   display: flex;
   justify-content: center;
@@ -258,6 +270,7 @@ header {
   max-width: 30.83rem;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+  min-width: 30%;
 }
 
 .services_card svg {
@@ -349,6 +362,8 @@ header {
 
   justify-content: center;
   align-items: center;
+
+  min-width: 30%;
 }
 
 ///Sponsor backgrounds
@@ -1110,7 +1125,6 @@ p {
   line-height: normal;
   }
 
-  
 
 
   header {
@@ -1340,7 +1354,9 @@ p {
   }
 }
 
-  
+  .h_logo {
+    background-size: contain;
+  }
 
 
 //Tablet SD
@@ -1468,6 +1484,10 @@ p {
     margin-top: 1.88rem;
   }
 
+  .h_logo {
+    background-size: cover;
+  }
+
 }
 
 //tablet HD/laptop (1025px - 1440px)
@@ -1559,3 +1579,7 @@ p {
     padding-right: 10rem;
   }
 }
+
+
+
+///Keyframes
