@@ -15,10 +15,39 @@
 header {
   display: flex;
   padding: 3.125rem 3.75rem 0rem 3.75rem;
+  text-align: right;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+
+.publications_page_header {
+  padding-bottom: 3.75rem;
 }
 
 .hlegal_logo_mobile {
   display: none;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hlegal_logo_tablet {
+  display: none;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(50, 50, 100);
+}
+
+.tablet_slash_logo {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .burger_menu {
@@ -33,6 +62,7 @@ header {
 .header_wrapper {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .hlegallaw_container {
@@ -54,6 +84,13 @@ header {
   gap: 0.38rem;
 }
 
+.header_active {
+  color: rgb(240, 20, 90);
+  -webkit-text-decoration: underline 2px solid rgb(240, 20, 90);
+          text-decoration: underline 2px solid rgb(240, 20, 90);
+  text-underline-offset: 0.19rem;
+}
+
 .header_menu ul {
   display: flex;
   list-style: none;
@@ -68,6 +105,12 @@ header {
   padding: 0.31rem 0.44rem;
 }
 
+.language_active {
+  background-color: rgb(240, 20, 90);
+  border-radius: 0.5rem;
+  color: white;
+}
+
 .header_nav {
   display: flex;
   flex-direction: row-reverse;
@@ -77,6 +120,26 @@ header {
   display: flex;
   flex-direction: row;
   gap: 0.94rem;
+}
+
+.header_nav li {
+  cursor: pointer;
+}
+
+.header_nav_active {
+  color: rgb(240, 20, 90);
+  border-bottom: 2px solid rgb(240, 20, 90);
+}
+
+.h_logo {
+  background: url(../images/h_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 .flexbox-center {
@@ -106,12 +169,28 @@ header {
   padding-bottom: 1.87rem;
 }
 
+.scroll_button svg:hover {
+  cursor: pointer;
+}
+
+.scroll_button svg path,
+.scroll_button svg circle {
+  stroke: white;
+  transition: stroke 0.3s ease 0.1s;
+}
+
+.scroll_button svg:hover path,
+.scroll_button svg:hover circle {
+  stroke: rgb(240, 20, 90);
+}
+
 .scroll_block {
   display: flex;
   gap: 1.88rem;
   padding-right: 3.75rem;
-  border-right: 4px solid red;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
   white-space: nowrap;
+  color: rgb(179, 179, 186);
 }
 
 .scroll_ul {
@@ -125,6 +204,7 @@ header {
   display: flex;
   gap: 3.75rem;
   flex: 1;
+  margin-top: 3.75rem;
   margin-left: 17.5rem;
   margin-right: 17.5rem;
 }
@@ -165,12 +245,24 @@ header {
   gap: 3.75rem;
 }
 
+.services_heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  margin-top: 3.75rem;
+}
+
+.services_container p {
+  color: white;
+}
+
 .services_card {
   display: flex;
   flex-direction: column;
   max-width: 30.83rem;
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+  min-width: 30%;
 }
 
 .services_card svg {
@@ -196,6 +288,16 @@ header {
 
 .quote_text {
   padding: 1.88rem;
+  flex: 1;
+}
+
+.quote_text h4 {
+  margin-top: 1.88rem;
+  color: rgb(179, 179, 186);
+}
+
+.quote_text p {
+  color: rgb(179, 179, 186);
 }
 
 .quote_image {
@@ -204,6 +306,7 @@ header {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  flex: 1;
 }
 
 .quote_image img {
@@ -219,9 +322,19 @@ header {
   margin-top: 1.88rem;
 }
 
+.dot_menu svg:hover {
+  cursor: pointer;
+}
+
+.dot_menu svg.active circle {
+  fill: rgb(36, 163, 255);
+  opacity: 1;
+}
+
 .trust {
   margin-top: 3.75rem;
   margin-bottom: 1.88rem;
+  color: rgb(50, 50, 100);
 }
 
 .sponsor_container {
@@ -243,56 +356,190 @@ header {
   height: 7.5rem;
   min-width: 16rem;
   background-color: #1C4280;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+}
+
+.sponsor_hillel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C4280;
+}
+
+.sponsor_hillel_logo {
+  background-image: url(../images/sponsors/hillel_logo.png);
+  background-position: center;
+  background-size: contain;
+  width: 13.5625rem;
+  height: 3rem;
 }
 
 .sponsor_wannabiz {
-  background: #143646;
+  background-color: #143646;
+  background-position: center;
+}
+
+.sponsor_wannabiz_logo {
+  background-image: url(../images/sponsors/wannabiz_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12.4375rem;
+  height: 2rem;
 }
 
 .sponsor_tapgerine {
   background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
 }
 
+.sponsor_tapgerine_logo {
+  background-image: url(../images/sponsors/tapgerine_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11.1875rem;
+  height: 2.75rem;
+}
+
 .sponsor_3dlook {
   background: #9E4DC3;
 }
 
+.sponsor_3dlook_logo {
+  background-image: url(../images/sponsors/3dlook_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11.25rem;
+  height: 2.625rem;
+}
+
 .sponsor_orangear {
-  background: #FD9339;
+  background-color: #FD9339;
+}
+
+.sponsor_orangear_logo {
+  background-image: url(../images/sponsors/orangear_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10.875rem;
+  height: 2.75rem;
 }
 
 .sponsor_adtellige {
   background: #E2E2E4;
 }
 
+.sponsor_adtellige_logo {
+  background-image: url(../images/sponsors/adtelligent_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8.31113rem;
+  height: 3rem;
+}
+
 .sponsor_clickky {
   background: #C71C36;
+}
+
+.sponsor_clickky_logo {
+  background-image: url(../images/sponsors/clickky_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8.625rem;
+  height: 3.8125rem;
 }
 
 .sponsor_ecoleasing {
   background: #DCF3F9;
 }
 
+.sponsor_ecoleasing_logo {
+  background-image: url(../images/sponsors/eco_leasing_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.125rem;
+  height: 4.75rem;
+}
+
 .sponsor_infratek {
   background: #EAEAEA;
+}
+
+.sponsor_infratek_logo {
+  background-image: url(../images/sponsors/infratek_logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 11.375rem;
+  height: 3.75rem;
 }
 
 .sponsor_citypark {
   background: #282240;
 }
 
+.sponsor_citypark_logo {
+  background-image: url(../images/sponsors/city_park_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11.3125rem;
+  height: 2.375rem;
+}
+
 .sponsor_artprint {
   background: #1D4568;
+}
+
+.sponsor_artprint_logo {
+  background-image: url(../images/sponsors/art_print_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11.8125rem;
+  height: 2.875rem;
 }
 
 .sponsor_ultimatecard {
   background: #000;
 }
 
+.sponsor_ultimatecard_logo {
+  background-image: url(../images/sponsors/ultimate_card_logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.5rem;
+  height: 5.9375rem;
+}
+
 .publication {
   display: flex;
   flex-direction: column;
   flex: 1 1 19rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.publication_pub_page_settings {
+  flex: 1 1 30%;
+  min-width: 19rem;
+  max-width: 32rem;
+}
+
+.publications_heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.88rem;
+  padding-bottom: 1.88rem;
+  gap: 0.62rem;
 }
 
 .publications_container {
@@ -310,6 +557,11 @@ header {
   gap: 0.94rem;
 }
 
+.publication_text .p_small {
+  padding-top: 0.94rem;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+}
+
 .publication_image_container {
   height: 12.5rem;
   background: url("../images/publications/publication_equity.png");
@@ -318,16 +570,108 @@ header {
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
+.toogle_publications {
+  display: inline-flex;
+  background: #E6E6F0;
+  border-radius: 0.75rem;
+  padding: 0.125rem;
+  margin-top: 1.88rem;
+  margin-bottom: 1.88rem;
+}
+
+.toogle_publications button {
+  padding: 0.5rem 1.88rem;
+  border-radius: 0.625rem;
+  background: transparent;
+}
+
+.toogle_publications_active {
+  background: white !important;
+}
+
+.more_publications button {
+  padding: 1.125rem 1.875rem;
+  border-radius: 0.75rem;
+  background: var(--Active-Regular, #24A3FF);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  margin-top: 1.88rem;
+  margin-bottom: 1.88rem;
+}
+
+.more_publications span {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 footer {
   display: flex;
   flex-direction: row;
-  margin-top: 1.88rem;
+  padding-top: 1.88rem;
 }
 
 .footer_block {
   display: flex;
   flex-direction: column;
   margin-right: auto;
+  gap: 1.31rem;
+  width: 100%;
+}
+
+.footer_block_publications {
+  padding-top: 1.88rem;
+  border-top: 2px solid #E6E6F0;
+}
+
+.dot_separator_footer {
+  margin-left: 0.62rem;
+  margin-right: 0.62rem;
+}
+
+.footer_top {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.copyright {
+  margin-left: auto;
+}
+
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.footer_phone {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: rgb(50, 50, 100);
+}
+
+.email {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  color: rgb(0, 108, 207);
 }
 
 .hero_regular {
@@ -336,7 +680,411 @@ footer {
   line-height: normal;
 }
 
+h1 {
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h3_caps {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: rgb(36, 163, 255);
+}
+
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.weight_400 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.p_small {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.display_except_mobile {
+  display: flex;
+}
+
+.grey_text {
+  color: rgb(179, 179, 186);
+}
+
+.light_blue_text {
+  color: rgb(36, 163, 255);
+}
+
+.color_blue {
+  color: rgb(50, 50, 100);
+}
+
+.margin-top_188rem {
+  margin-top: 1.88rem;
+}
+
+.center_flex {
+  display: flex;
+  align-items: center;
+}
+
+.gdpr_publication_picture {
+  background-image: url(../images/publications/publication_gdpr.png);
+  background-position: center;
+}
+
+.millenials_publication_picture {
+  background-image: url(../images/publications/publication_millenials.png);
+  background-position: center;
+}
+
+.law_publication_picture {
+  background-image: url(../images/publications/publication_law.jpg);
+  background-position: center;
+}
+
+.children_publication_picture {
+  background-image: url(../images/publications/Publication-children.jpg);
+  background-position: center;
+}
+
+.publication_date {
+  color: var(--Grey-Text, #B3B3BA);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+.light_blue {
+  color: rgb(36, 163, 255);
+}
+
+.white {
+  color: white;
+}
+
+.introduction {
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem; /* 157.895% */
+}
+
+.grey_bg {
+  background-color: rgb(245, 245, 250);
+}
+
+.gradient_text {
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_text_reversed {
+  background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about_heading_block {
+  display: flex;
+}
+
+.about_heading_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-right: 1.88rem;
+  flex: 1;
+}
+
+.about_heading_sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.88rem;
+  border-left: 2px solid #E6E6F0;
+  max-width: 24rem;
+  flex: 1;
+  gap: 2.5rem;
+}
+
+.heading_sidebar_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading_sidebar_element p {
+  color: rgb(50, 50, 100);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sidebar_element_count {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 0.5rem;
+}
+
+.team_text {
+  color: white;
+  text-align: center;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  font-family: Montserrat;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.9375rem;
+  text-transform: uppercase;
+}
+
+.about_margin_wrapper {
+  margin-left: 17.5rem;
+  margin-right: 17.5rem;
+}
+
+.about_padding_wrapper {
+  padding-left: 17.5rem;
+  padding-right: 17.5rem;
+}
+
+.team_image_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 7.13rem;
+  max-height: auto;
+  aspect-ratio: 1920/584;
+  margin-top: 3.75rem;
+  background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(../images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
+  background-blend-mode: screen, normal;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_flex_container {
+  display: flex;
+  padding-top: 3.75rem;
+}
+
+.about_flex_container h1 {
+  margin-left: 3.75rem;
+  min-width: 19.69rem;
+  margin-bottom: 3.75rem;
+}
+
+.about_p_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 58.62rem;
+}
+
+.achievements_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 250);
+}
+
+.achievements_container h3 {
+  margin-top: 1.88rem;
+}
+
+.achievements_block {
+  display: flex;
+  gap: 2.5rem;
+  overflow: hidden;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.dot_menu_about_page {
+  gap: 0.94rem;
+}
+
+.dot_menu_about_page svg:nth-child(n+4) {
+  display: none;
+}
+
+.achievement {
+  display: flex;
+  justify-content: center;
+  max-width: 23.12rem;
+  min-width: 8.25rem;
+  height: auto;
+  margin-top: 1.88rem;
+  margin-bottom: 1.88rem;
+  flex: 1;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 1.56rem;
+  padding-bottom: 1.56rem;
+  background-color: white;
+}
+
+.achievement_image_legal500 {
+  width: 80px;
+  height: 60px;
+  background: url(../images/achievements/legal_500.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.achievement_image_legalawards {
+  width: 159px;
+  height: 60px;
+  background: url(../images/achievements/jur_prem.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.achievement_image_leader {
+  width: 195px;
+  height: 60px;
+  background: url(../images/achievements/leader.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.achievement_image_ulf {
+  width: 166px;
+  height: 60px;
+  background: url(../images/achievements/ulf.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.padding_wrapper_10_188 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+
+.team_member {
+  max-width: 30.83rem;
+  min-width: 16rem;
+  margin: 0 auto;
+}
+
+.team_member_photo {
+  height: 25rem;
+  max-width: 30.83rem;
+  border-radius: 0.75rem;
+}
+
+.team_profile h4 {
+  color: rgb(50, 50, 100);
+}
+
+.team_profile p {
+  color: rgb(179, 179, 186);
+}
+
+.alexander {
+  background: url(../images/team/alexander.png) lightgray 50%/cover no-repeat;
+}
+
+.evgeny {
+  background: url(../images/team/evgeny.png) lightgray 50%/cover no-repeat;
+}
+
+.vladislav {
+  background: url(../images/team/vladislav.png) lightgray 50%/cover no-repeat;
+}
+
+.sergey {
+  background: url(../images/team/sergey.png) lightgray 50%/cover no-repeat;
+}
+
+.oksana {
+  background: url(../images/team/oksana.png) lightgray 50%/cover no-repeat;
+}
+
+.julia {
+  background: url(../images/team/julia.png) lightgray 50%/cover no-repeat;
+}
+
+.team_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.team_card {
+  flex: 1 1 30%;
+  justify-content: center;
+}
+
+.team_profile {
+  display: flex;
+  margin-top: 0.94rem;
+}
+
+.team_profile button {
+  background: transparent;
+}
+
+.team_profile_text {
+  margin-right: auto;
+}
+
 @media (max-width: 767px) {
+  h1 {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
   header {
     padding: 0;
     flex-direction: column-reverse;
@@ -389,6 +1137,7 @@ footer {
   .scroll_menu_text {
     padding-left: 1.88rem;
     padding-right: 1.88rem;
+    padding-top: 1.88rem;
   }
   .scroll_ul {
     flex-direction: row;
@@ -397,7 +1146,7 @@ footer {
     overflow-x: auto;
     border-right: none;
     padding-bottom: 3.75rem;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
     padding-left: 1.88rem;
     padding-right: 1.88rem;
   }
@@ -428,23 +1177,97 @@ footer {
   footer {
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 1.88rem;
+  }
+  footer circle {
+    display: none;
   }
   .footer_block {
     margin-right: 0;
+    align-items: center;
   }
   .footer_top {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: contents;
   }
   .footer_bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .services_heading {
+    margin-top: 1.88rem;
+  }
+  .services_card {
+    margin-top: 1.88rem;
+    margin-bottom: 1.88rem;
+  }
+  .sponsor_container :nth-child(n+7) {
+    display: none;
+  }
   .copyright {
     display: flex;
     justify-content: center;
+    order: 1;
+    margin-left: 0;
+  }
+  .dot_separator_footer {
+    display: none;
+  }
+  .about_heading_block {
+    flex-direction: column;
+    gap: 1.88rem;
+  }
+  .about_margin_wrapper {
+    margin-left: 1.88rem;
+    margin-right: 1.88rem;
+  }
+  .team_text {
+    color: var(--Basic-White, #FFF);
+    text-align: center;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8125rem;
+    text-transform: uppercase;
+  }
+  .achievements_block :nth-child(n+2) {
+    display: none;
+  }
+  .about_padding_wrapper {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+  }
+  .about_flex_container {
+    flex-direction: column;
+  }
+  .about_flex_container h1 {
+    margin-left: 0;
+    margin-top: 1.88rem;
+  }
+  .dot_menu_about_page svg:nth-child(n+4) {
+    display: inline;
+  }
+  .grey_bg_mobile {
+    background: var(--Grey-Bg, #F5F5FA);
+  }
+  .achievements_block {
+    justify-content: center;
+  }
+  .padding_wrapper_10_188 {
+    padding-left: 1.88rem;
+    padding-right: 1.88rem;
+  }
+  .display_except_mobile {
+    display: none;
+  }
+  .h_logo {
+    background-size: cover;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -476,6 +1299,7 @@ footer {
   .scroll_menu_text {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+    padding-top: 3.75rem;
   }
   .scroll_ul {
     flex-direction: row;
@@ -486,7 +1310,7 @@ footer {
     padding-bottom: 3.75rem;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
   }
   .margin_wrapper {
     margin-left: 3.75rem;
@@ -497,6 +1321,8 @@ footer {
   }
   .quote_container {
     flex-direction: column;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
   }
   .quote_image {
     max-width: 100%;
@@ -504,8 +1330,51 @@ footer {
   .quote_image img {
     border-radius: 0.75rem 0.75rem 0rem 0rem;
   }
+  .sponsor_block {
+    max-width: 16rem;
+  }
+  .hlegal_logo_tablet {
+    display: flex;
+  }
+  .hlegallaw_container {
+    align-items: flex-start;
+  }
+  .about_margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .about_heading_block {
+    flex-direction: column;
+    gap: 1.88rem;
+  }
+  .team_text {
+    color: var(--Basic-White, #FFF);
+    text-align: center;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    font-family: Montserrat;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.9375rem;
+    text-transform: uppercase;
+  }
+  .about_padding_wrapper {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .about_flex_container {
+    flex-direction: column;
+  }
+  .about_flex_container h1 {
+    margin-left: 0;
+    margin-top: 1.88rem;
+  }
+  .h_logo {
+    background-size: cover;
+  }
 }
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .header_solutions {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -523,6 +1392,17 @@ footer {
   .services_card {
     max-width: 16.33rem;
   }
+  .about_margin_wrapper {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }
+  .about_padding_wrapper {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  .h_logo {
+    background-size: contain;
+  }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
   .scroll_menu {
@@ -536,10 +1416,22 @@ footer {
   .services_card {
     max-width: 25rem;
   }
+  .about_margin_wrapper {
+    margin-right: 17.5rem;
+    margin-left: 17.5rem;
+  }
+  .padding_wrapper_10_188 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 @media (min-width: 1921px) and (max-width: 2560px) {
   .sponsor_container {
     margin-left: 6.25rem;
     margin-right: 6.25rem;
+  }
+  .padding_wrapper_10_188 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */
