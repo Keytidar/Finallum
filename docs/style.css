@@ -9,7 +9,7 @@
 
 .background_container {
   border-radius: 0rem 0rem 0.75rem 0.75rem;
-  background: var(--Gradient-Supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));
+  background: var(--Gradient-Supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%));
 }
 
 header {
@@ -167,7 +167,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .header_solutions h1 {
-  color: var(--Basic-White, #FFF);
+  color: var(--Basic-White, #fff);
   text-align: center;
   font-family: Montserrat;
   font-size: 2.375rem;
@@ -226,7 +226,7 @@ body:has(#burger-toggle:checked) .header_nav {
 
 .background_layer {
   border-radius: 0rem 0rem 0.75rem 0.75rem;
-  background: #CACADB;
+  background: #cacadb;
   padding-bottom: 0.62rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -234,7 +234,7 @@ body:has(#burger-toggle:checked) .header_nav {
 
 .background_layer_second {
   border-radius: 0rem 0rem 0.75rem 0.75rem;
-  background: #E7E7F2;
+  background: #e7e7f2;
   padding-bottom: 0.62rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -284,7 +284,7 @@ body:has(#burger-toggle:checked) .header_nav {
   margin-bottom: 1.88rem;
   padding: 0.875rem;
   border-radius: 1.5rem;
-  background: var(--Basic-White, #FFF);
+  background: var(--Basic-White, #fff);
   box-sizing: content-box;
 }
 
@@ -344,11 +344,11 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .dot_menu circle {
-  fill: #24A3FF;
+  fill: #24a3ff;
 }
 
 .dot_menu input:checked + label circle {
-  fill: #24A3FF;
+  fill: #24a3ff;
   opacity: 1;
 }
 
@@ -394,7 +394,7 @@ body:has(#burger-toggle:checked) .header_nav {
   flex-basis: 26.88rem;
   height: 7.5rem;
   min-width: 16rem;
-  background-color: #1C4280;
+  background-color: #1c4280;
   justify-content: center;
   align-items: center;
   min-width: 30%;
@@ -404,7 +404,7 @@ body:has(#burger-toggle:checked) .header_nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1C4280;
+  background-color: #1c4280;
 }
 
 .sponsor_hillel_logo {
@@ -430,7 +430,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_tapgerine {
-  background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+  background: linear-gradient(0deg, #f48b30 0%, #f48b30 100%), #f48b30;
 }
 
 .sponsor_tapgerine_logo {
@@ -443,7 +443,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_3dlook {
-  background: #9E4DC3;
+  background: #9e4dc3;
 }
 
 .sponsor_3dlook_logo {
@@ -456,7 +456,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_orangear {
-  background-color: #FD9339;
+  background-color: #fd9339;
 }
 
 .sponsor_orangear_logo {
@@ -469,7 +469,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_adtellige {
-  background: #E2E2E4;
+  background: #e2e2e4;
 }
 
 .sponsor_adtellige_logo {
@@ -482,7 +482,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_clickky {
-  background: #C71C36;
+  background: #c71c36;
 }
 
 .sponsor_clickky_logo {
@@ -495,7 +495,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_ecoleasing {
-  background: #DCF3F9;
+  background: #dcf3f9;
 }
 
 .sponsor_ecoleasing_logo {
@@ -508,7 +508,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_infratek {
-  background: #EAEAEA;
+  background: #eaeaea;
 }
 
 .sponsor_infratek_logo {
@@ -534,7 +534,7 @@ body:has(#burger-toggle:checked) .header_nav {
 }
 
 .sponsor_artprint {
-  background: #1D4568;
+  background: #1d4568;
 }
 
 .sponsor_artprint_logo {
@@ -611,7 +611,7 @@ body:has(#burger-toggle:checked) .header_nav {
 
 .toogle_publications {
   display: inline-flex;
-  background: #E6E6F0;
+  background: #e6e6f0;
   border-radius: 0.75rem;
   padding: 0.125rem;
   margin-top: 1.88rem;
@@ -632,7 +632,7 @@ body:has(#burger-toggle:checked) .header_nav {
 .more_publications button {
   padding: 1.125rem 1.875rem;
   border-radius: 0.75rem;
-  background: var(--Active-Regular, #24A3FF);
+  background: var(--Active-Regular, #24a3ff);
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
   margin-top: 1.88rem;
   margin-bottom: 1.88rem;
@@ -836,7 +836,7 @@ p {
 }
 
 .publication_date {
-  color: var(--Grey-Text, #B3B3BA);
+  color: var(--Grey-Text, #b3b3ba);
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -865,14 +865,14 @@ p {
 }
 
 .gradient_text {
-  background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient_text_reversed {
-  background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+  background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #ef8080 0.84%, #f0145a 99.96%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -955,7 +955,7 @@ p {
   max-height: auto;
   aspect-ratio: 1920/584;
   margin-top: 3.75rem;
-  background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(./images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
+  background: linear-gradient(265deg, #f01432 0%, #323264 29.69%), url(./images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
   background-blend-mode: screen, normal;
   position: relative;
   overflow: hidden;
@@ -1237,7 +1237,7 @@ p {
     border-radius: 0.75rem 0.75rem 0rem 0rem;
   }
   .quote_text h1 {
-    background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background: var(--Gradient-Red-Text, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1293,7 +1293,7 @@ p {
     margin-right: 1.88rem;
   }
   .team_text {
-    color: var(--Basic-White, #FFF);
+    color: var(--Basic-White, #fff);
     text-align: center;
     text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     font-family: Montserrat;
@@ -1322,7 +1322,7 @@ p {
     display: inline;
   }
   .grey_bg_mobile {
-    background: var(--Grey-Bg, #F5F5FA);
+    background: var(--Grey-Bg, #f5f5fa);
   }
   .achievements_block {
     justify-content: center;
@@ -1416,7 +1416,7 @@ p {
     gap: 1.88rem;
   }
   .team_text {
-    color: var(--Basic-White, #FFF);
+    color: var(--Basic-White, #fff);
     text-align: center;
     text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     font-family: Montserrat;
