@@ -149,11 +149,22 @@
           </div>
           <div class="header_wrapper">
             <div class="header_menu">
-              <ul class="languages_list">
-                <li>УК</li>
-                <li>РУ</li>
-                <li class="language_active">EN</li>
-              </ul>
+              <form action="">
+                <ul class="languages_list">
+                  <input type="radio" name="language" id="ua" hidden>
+                  <label for="ua">
+                    <li>УК</li>
+                  </label>
+                  <input type="radio" name="language" id="ru" hidden>
+                  <label for="ru">
+                    <li>РУ</li>
+                  </label>
+                  <input type="radio" name="language" id="en" checked hidden>
+                  <label for="en">
+                    <li>EN</li>
+                  </label>
+                </ul>
+              </form>
               <svg
                 class="dop_separator"
                 xmlns="http://www.w3.org/2000/svg"

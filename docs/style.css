@@ -113,9 +113,10 @@ body:has(#burger-toggle:checked) .header_nav {
 
 .languages_list li {
   padding: 0.31rem 0.44rem;
+  cursor: pointer;
 }
 
-.language_active {
+.languages_list input:checked + label {
   background-color: rgb(240, 20, 90);
   border-radius: 0.5rem;
   color: white;

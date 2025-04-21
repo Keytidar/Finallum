@@ -128,9 +128,11 @@ body:has(#burger-toggle:checked) .header_nav {
   /// Элементы списков
 .languages_list li {
   padding: 0.31rem 0.44rem;
+
+  cursor: pointer;
 }
 
-.language_active {
+.languages_list input:checked + label {
   background-color: $accent_red;
   border-radius: 0.5rem;
   color: white;
@@ -1209,6 +1211,9 @@ p {
   .languages_list {
     margin-right: auto;
   }
+
+
+
   .header_nav {
     display: none;
   }
