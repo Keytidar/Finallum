@@ -347,6 +347,15 @@ body:has(#burger-toggle:checked) .header_nav {
   opacity: 1;
 }
 
+.dot_menu_about_page svg:hover {
+  cursor: pointer;
+}
+
+.dot_menu_about_page svg.active circle {
+  fill: rgb(36, 163, 255);
+  opacity: 1;
+}
+
 .trust {
   margin-top: 3.75rem;
   margin-bottom: 1.88rem;
@@ -595,14 +604,15 @@ body:has(#burger-toggle:checked) .header_nav {
   margin-bottom: 1.88rem;
 }
 
-.toogle_publications button {
+.toogle_publications label {
   padding: 0.5rem 1.88rem;
   border-radius: 0.625rem;
   background: transparent;
+  cursor: pointer;
 }
 
-.toogle_publications_active {
-  background: white !important;
+.toogle_publications input:checked + label {
+  background: white;
 }
 
 .more_publications button {

@@ -119,10 +119,18 @@
  <div class="grey_bg">
    <div class="margin_wrapper">
     <div class="flexbox-center">
-      <div class="toogle_publications">
-        <button class="toogle_publications_active"><h4>news</h4></button>
-        <button><h4>articles</h4></button>
-      </div>
+      <form>
+        <div class="toogle_publications">
+          <input type="radio" id="news" name="toogle_pub" hidden checked>
+          <label for="news">
+            <h4>news</h4>
+          </label>
+          <input type="radio" id="articles" name="toogle_pub" hidden>
+            <label for="articles">
+            <h4>articles</h4>
+          </label>
+        </div>
+      </form>
     </div>
       <div class="publications_container">
         <div class="publication publication_pub_page_settings">
