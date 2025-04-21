@@ -1133,6 +1133,14 @@ p {
   color: $grey_text;
 }
 
+.team_opener_button {
+  cursor: pointer;
+}
+
+.team_opener_button:hover path {
+  stroke: $accent_red;
+}
+
 
 ///team photos
 

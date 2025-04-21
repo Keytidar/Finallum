@@ -1069,6 +1069,14 @@ p {
   color: rgb(179, 179, 186);
 }
 
+.team_opener_button {
+  cursor: pointer;
+}
+
+.team_opener_button:hover path {
+  stroke: rgb(240, 20, 90);
+}
+
 .alexander {
   background: url(./images/team/alexander.png) lightgray 50%/cover no-repeat;
 }
