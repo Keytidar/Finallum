@@ -132,7 +132,7 @@ header {
 }
 
 .h_logo {
-  background: url(../images/h_logo.svg);
+  background: url(./images/h_logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -369,7 +369,7 @@ header {
 }
 
 .sponsor_hillel_logo {
-  background-image: url(../images/sponsors/hillel_logo.png);
+  background-image: url(./images/sponsors/hillel_logo.png);
   background-position: center;
   background-size: contain;
   width: 13.5625rem;
@@ -382,7 +382,7 @@ header {
 }
 
 .sponsor_wannabiz_logo {
-  background-image: url(../images/sponsors/wannabiz_logo.png);
+  background-image: url(./images/sponsors/wannabiz_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -395,7 +395,7 @@ header {
 }
 
 .sponsor_tapgerine_logo {
-  background-image: url(../images/sponsors/tapgerine_logo.png);
+  background-image: url(./images/sponsors/tapgerine_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -408,7 +408,7 @@ header {
 }
 
 .sponsor_3dlook_logo {
-  background-image: url(../images/sponsors/3dlook_logo.png);
+  background-image: url(./images/sponsors/3dlook_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ header {
 }
 
 .sponsor_orangear_logo {
-  background-image: url(../images/sponsors/orangear_logo.png);
+  background-image: url(./images/sponsors/orangear_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -434,7 +434,7 @@ header {
 }
 
 .sponsor_adtellige_logo {
-  background-image: url(../images/sponsors/adtelligent_logo.png);
+  background-image: url(./images/sponsors/adtelligent_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -447,7 +447,7 @@ header {
 }
 
 .sponsor_clickky_logo {
-  background-image: url(../images/sponsors/clickky_logo.png);
+  background-image: url(./images/sponsors/clickky_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -460,7 +460,7 @@ header {
 }
 
 .sponsor_ecoleasing_logo {
-  background-image: url(../images/sponsors/eco_leasing_logo.png);
+  background-image: url(./images/sponsors/eco_leasing_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -473,7 +473,7 @@ header {
 }
 
 .sponsor_infratek_logo {
-  background-image: url(../images/sponsors/infratek_logo.png);
+  background-image: url(./images/sponsors/infratek_logo.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -486,7 +486,7 @@ header {
 }
 
 .sponsor_citypark_logo {
-  background-image: url(../images/sponsors/city_park_logo.png);
+  background-image: url(./images/sponsors/city_park_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -499,7 +499,7 @@ header {
 }
 
 .sponsor_artprint_logo {
-  background-image: url(../images/sponsors/art_print_logo.png);
+  background-image: url(./images/sponsors/art_print_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -512,7 +512,7 @@ header {
 }
 
 .sponsor_ultimatecard_logo {
-  background-image: url(../images/sponsors/ultimate_card_logo.png);
+  background-image: url(./images/sponsors/ultimate_card_logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -564,7 +564,7 @@ header {
 
 .publication_image_container {
   height: 12.5rem;
-  background: url("../images/publications/publication_equity.png");
+  background: url(./images/publications/publication_equity.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
@@ -766,22 +766,22 @@ p {
 }
 
 .gdpr_publication_picture {
-  background-image: url(../images/publications/publication_gdpr.png);
+  background-image: url(./images/publications/publication_gdpr.png);
   background-position: center;
 }
 
 .millenials_publication_picture {
-  background-image: url(../images/publications/publication_millenials.png);
+  background-image: url(./images/publications/publication_millenials.png);
   background-position: center;
 }
 
 .law_publication_picture {
-  background-image: url(../images/publications/publication_law.jpg);
+  background-image: url(./images/publications/publication_law.jpg);
   background-position: center;
 }
 
 .children_publication_picture {
-  background-image: url(../images/publications/Publication-children.jpg);
+  background-image: url(./images/publications/Publication-children.jpg);
   background-position: center;
 }
 
@@ -905,7 +905,7 @@ p {
   max-height: auto;
   aspect-ratio: 1920/584;
   margin-top: 3.75rem;
-  background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(../images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
+  background: linear-gradient(265deg, #F01432 0%, #323264 29.69%), url(./images/about_us_team_photo.png) lightgray 50%/cover no-repeat;
   background-blend-mode: screen, normal;
   position: relative;
   overflow: hidden;
@@ -974,7 +974,7 @@ p {
 .achievement_image_legal500 {
   width: 80px;
   height: 60px;
-  background: url(../images/achievements/legal_500.png);
+  background: url(./images/achievements/legal_500.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -982,7 +982,7 @@ p {
 .achievement_image_legalawards {
   width: 159px;
   height: 60px;
-  background: url(../images/achievements/jur_prem.png);
+  background: url(./images/achievements/jur_prem.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -990,7 +990,7 @@ p {
 .achievement_image_leader {
   width: 195px;
   height: 60px;
-  background: url(../images/achievements/leader.png);
+  background: url(./images/achievements/leader.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -998,7 +998,7 @@ p {
 .achievement_image_ulf {
   width: 166px;
   height: 60px;
-  background: url(../images/achievements/ulf.png);
+  background: url(./images/achievements/ulf.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1029,27 +1029,27 @@ p {
 }
 
 .alexander {
-  background: url(../images/team/alexander.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/alexander.png) lightgray 50%/cover no-repeat;
 }
 
 .evgeny {
-  background: url(../images/team/evgeny.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/evgeny.png) lightgray 50%/cover no-repeat;
 }
 
 .vladislav {
-  background: url(../images/team/vladislav.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/vladislav.png) lightgray 50%/cover no-repeat;
 }
 
 .sergey {
-  background: url(../images/team/sergey.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/sergey.png) lightgray 50%/cover no-repeat;
 }
 
 .oksana {
-  background: url(../images/team/oksana.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/oksana.png) lightgray 50%/cover no-repeat;
 }
 
 .julia {
-  background: url(../images/team/julia.png) lightgray 50%/cover no-repeat;
+  background: url(./images/team/julia.png) lightgray 50%/cover no-repeat;
 }
 
 .team_container {
